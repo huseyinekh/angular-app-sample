@@ -1,0 +1,14 @@
+@import "~igniteui-angular/lib/core/styles/themes/index";
+$error_color: red;
+
+// $primary: #731963 !default;
+// $secondary: #ce5712 !default;
+// $app-palette: igx-palette($primary, $secondary);
+
+$custom_palette: igx-palette(
+  $primary: $primary_color,
+  $secondary: $secondary_color,
+  $error: red,
+);
+@include igx-core();
+@include igx-theme($default-palette);

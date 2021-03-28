@@ -1,0 +1,17 @@
+<div class="content-wrap" style="height: 100vh;">
+  <igx-nav-drawer id="navigation" #drawer [isOpen]="true">
+    <ng-template igxDrawer>
+      <nav>
+        <span active=[true] igxDrawerItem [isHeader]="true">Sidebar</span>
+        <span igxDrawerItem routerLink="home">Home</span>
+        <span igxDrawerItem routerLink="user">User</span>
+        <span igxDrawerItem routerLink="role">Role</span>
+        <span igxDrawerItem routerLink="data-binding">Data binding</span>
+
+      </nav>
+    </ng-template>
+  </igx-nav-drawer>
+  <main>
+    <!-- app content -->
+  </main>
+</div>
